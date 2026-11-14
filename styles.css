@@ -1,18 +1,18 @@
-/* Chez Christina by Casa Tala: warm cream + gold frames, deep green script, crimson caps, plumeria accents (from their flyers) */
+/* Chez Christina by Casa Tala: bright cream base in the logo's colors: black, gold and bamboo green */
 :root{
   color-scheme:light;
   --cream:#fbf5ea;
   --cream-2:#f3e8d4;
   --paper:#fffdf8;
-  --ink:#2b2418;
-  --muted:#6d604d;
-  --green:#1d4a33;
-  --green-2:#2f6b47;
-  --green-deep:#143423;
-  --red:#a1192b;
-  --red-2:#7f1220;
-  --gold:#b8882e;
-  --gold-hi:#d9b45f;
+  --ink:#1f1d18;
+  --muted:#625a4b;
+  --green:#1a1915;
+  --green-2:#557536;
+  --green-deep:#0f0f0d;
+  --red:#86621a;
+  --red-2:#6a4c10;
+  --gold:#bf9134;
+  --gold-hi:#e0bd66;
   --gold-lo:#8c6519;
   --line:rgba(184,136,46,.38);
   --line-soft:rgba(184,136,46,.2);
@@ -56,7 +56,7 @@ p{margin:0 0 1em}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:700 .92rem/1 var(--sans);letter-spacing:.02em;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s,color .2s,border-color .2s;border:1.5px solid transparent;white-space:nowrap}
-.btn--gold{background:var(--red);color:#fff;box-shadow:0 8px 22px -10px rgba(161,25,43,.7)}
+.btn--gold{background:var(--red);color:#fff;box-shadow:0 8px 22px -10px rgba(134,98,26,.6)}
 .btn--gold:hover{background:var(--red-2);transform:translateY(-2px)}
 .btn--line{border-color:var(--green);color:var(--green);background:transparent}
 .btn--line:hover{background:var(--green);color:#fff}
@@ -148,7 +148,7 @@ p{margin:0 0 1em}
 .dish img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
 .dish--wide img{aspect-ratio:16/9}
 .dish:hover img{transform:scale(1.05)}
-.dish figcaption{position:absolute;inset:auto 0 0 0;padding:60px 22px 20px;background:linear-gradient(transparent,rgba(16,32,22,.9) 58%)}
+.dish figcaption{position:absolute;inset:auto 0 0 0;padding:60px 22px 20px;background:linear-gradient(transparent,rgba(12,12,10,.9) 58%)}
 .dish h3{font-size:1.5rem;margin:0 0 4px;color:#fff}
 .dish p{margin:0;color:#e9e1cf;font-size:.92rem;max-width:36em}
 .tag{display:inline-block;font:700 .64rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 10px;border-radius:999px;margin-bottom:10px}
@@ -218,7 +218,7 @@ p{margin:0 0 1em}
 .popular a{position:relative;display:block;border-radius:12px;overflow:hidden;border:1px solid rgba(217,180,95,.35);text-decoration:none}
 .popular img{aspect-ratio:1;object-fit:cover;width:100%;transition:transform .6s}
 .popular a:hover img{transform:scale(1.06)}
-.popular span{position:absolute;inset:auto 0 0;padding:28px 12px 10px;background:linear-gradient(transparent,rgba(16,32,22,.9));color:#fff;font:700 1rem var(--display)}
+.popular span{position:absolute;inset:auto 0 0;padding:28px 12px 10px;background:linear-gradient(transparent,rgba(12,12,10,.9));color:#fff;font:700 1rem var(--display)}
 
 /* sunday buffet */
 #weekly .head p{max-width:560px;margin-inline:auto}
