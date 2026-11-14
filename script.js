@@ -114,12 +114,11 @@
     navLinks.forEach(function(a){ var el = document.getElementById(a.getAttribute('href').slice(1)); if (el) so.observe(el); });
   }
 
-  /* Menu jump bar: highlight the section you're reading, without fighting clicks */
+  /* Menu jump bar: only the tab you tap gets highlighted */
   var jump = document.querySelector('.menu__jump');
   if (jump) {
     var chips = Array.prototype.slice.call(jump.querySelectorAll('a'));
     var groups = chips.map(function(a){ return document.getElementById(a.getAttribute('href').slice(1)); });
-    var lockUntil = 0, ticking = false;
     var setActive = function(i){
       chips.forEach(function(a, k){ a.classList.toggle('is-active', k === i); });
       var c = chips[i];
@@ -128,20 +127,11 @@
         if (left < jump.scrollLeft || right > jump.scrollLeft + jump.clientWidth) jump.scrollLeft = left - 12;
       }
     };
-    var onScroll = function(){
-      ticking = false;
-      if (Date.now() < lockUntil) return;
-      var line = jump.getBoundingClientRect().bottom + 40, cur = -1;
-      groups.forEach(function(g, k){ if (g && g.getBoundingClientRect().top <= line) cur = k; });
-      if (cur === -1) chips.forEach(function(a){ a.classList.remove('is-active'); }); else setActive(cur);
-    };
-    window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
     chips.forEach(function(a, k){
       a.addEventListener('click', function(e){
         var g = groups[k]; if (!g) return;
         e.preventDefault();
         setActive(k);
-        lockUntil = Date.now() + 1200;
         g.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
         if (history.replaceState) history.replaceState(null, '', '#' + g.id);
         groups.forEach(function(x){ x.classList.remove('is-picked'); });

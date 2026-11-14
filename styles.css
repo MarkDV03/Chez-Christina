@@ -380,3 +380,9 @@ address{font-style:normal;font-size:1.15rem;margin-bottom:6px}
 .leaf--c{left:4%;top:6%;width:24%;transform:rotate(-58deg)}
 .leaf--d{right:2%;bottom:8%;width:20%;transform:rotate(120deg)}
 .marquee{border-top:1px solid rgba(224,189,102,.35)}
+
+/* Logo floats on the black with no visible disc */
+.hero__badge{box-shadow:none;border-radius:50%;background:radial-gradient(circle,#050504 0 58%,rgba(5,5,4,.85) 64%,rgba(5,5,4,0) 72%);width:68%}
+.nav__badge{width:54px;height:54px;border-radius:0;box-shadow:none}
+.footer__badge{box-shadow:none;border-radius:0;width:190px}
+@media (max-width:600px){.nav__badge{width:46px;height:46px}}
