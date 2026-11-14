@@ -144,6 +144,11 @@
         lockUntil = Date.now() + 1200;
         g.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
         if (history.replaceState) history.replaceState(null, '', '#' + g.id);
+        groups.forEach(function(x){ x.classList.remove('is-picked'); });
+        void g.offsetWidth;
+        g.classList.add('is-picked');
+        clearTimeout(g._pick);
+        g._pick = setTimeout(function(){ g.classList.remove('is-picked'); }, 2600);
       });
     });
   }

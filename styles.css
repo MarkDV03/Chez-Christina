@@ -172,7 +172,7 @@ p{margin:0 0 1em}
 .menu__jump a{flex:none;font-size:.84rem;font-weight:700;color:var(--green);text-decoration:none;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line)}
 .menu__jump a:hover,.menu__jump a.is-active{background:var(--green);border-color:var(--green);color:#fff}
 .menu__grid{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-items:start}
-.menu__group{margin-bottom:44px;scroll-margin-top:64px;min-width:0}
+.menu__group{margin-bottom:44px;scroll-margin-top:88px;min-width:0}
 .menu__group h3{font-size:1.5rem;padding-bottom:12px;margin-bottom:6px;border-bottom:2px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;color:var(--red)}
 .menu__group h3 small{font:700 .64rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--green-2)}
 .menu dl{margin:0}
@@ -180,6 +180,13 @@ p{margin:0 0 1em}
 .menu dt{font:700 1.08rem/1.3 var(--display);color:var(--green)}
 .menu dd{margin:3px 0 0;color:var(--muted);font-size:.92rem}
 .star{color:var(--gold);font-size:.9rem}
+.menu__group{position:relative;isolation:isolate}
+.menu__group h3{transform-origin:left center}
+.menu__group::before{content:"";position:absolute;inset:-14px -18px;border-radius:var(--r);background:rgba(184,136,46,.12);border:2px solid var(--gold);opacity:0;pointer-events:none;z-index:-1}
+.menu__group.is-picked::before{animation:pick 2.6s ease forwards}
+.menu__group.is-picked h3{animation:pickh 2.6s ease}
+@keyframes pick{0%,10%{opacity:0}22%,70%{opacity:1}100%{opacity:0}}
+@keyframes pickh{0%,15%{transform:none}28%{transform:scale(1.04)}45%,100%{transform:none}}
 .menu__group--sweet{padding:22px 24px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line)}
 .menu__group--sweet dl div{border:0;padding-bottom:0}
 
@@ -318,6 +325,7 @@ address{font-style:normal;font-size:1.15rem;margin-bottom:6px}
   .services li+li::before{margin:0 8px}
   .announce{font-size:.8rem}
   .menu__jump{top:64px}
+  .menu__group::before{inset:-12px -10px}
   .buffet{padding:20px}
   .buffet__lists,.weekly{grid-template-columns:1fr}
   .price__amt{font-size:1.9rem}
@@ -328,6 +336,7 @@ address{font-style:normal;font-size:1.15rem;margin-bottom:6px}
   .callbar a:last-child{background:var(--red);color:#fff}
   .callbar.is-on{transform:none}
 }
+@media (prefers-reduced-motion:reduce){.menu__group.is-picked h3{animation:none}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
   .deco__rays line,.deco__rings circle{stroke-dashoffset:0!important}
