@@ -386,3 +386,9 @@ address{font-style:normal;font-size:1.15rem;margin-bottom:6px}
 .nav__badge{width:54px;height:54px;border-radius:0;box-shadow:none}
 .footer__badge{box-shadow:none;border-radius:0;width:190px}
 @media (max-width:600px){.nav__badge{width:46px;height:46px}}
+
+/* Blend pass 2: no disc behind the logo, gold lines glow into the rays */
+.hero__badge{background:none;filter:drop-shadow(0 0 14px rgba(224,189,102,.28)) drop-shadow(0 0 40px rgba(224,189,102,.12))}
+.nav__badge{width:62px;height:62px;image-rendering:auto}
+.nav__inner{padding-block:6px}
+@media (max-width:600px){.nav__badge{width:52px;height:52px}}
