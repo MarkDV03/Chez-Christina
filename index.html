@@ -12,10 +12,10 @@
 <meta property="og:description" content="Filipino Asian fusion in Milpitas. Breakfast till 7 pm, Sunday buffet, live music on weekend nights.">
 <meta property="og:image" content="assets/img/share.jpg">
 <meta property="og:type" content="restaurant">
-<meta name="theme-color" content="#0a0907">
+<meta name="theme-color" content="#fbf5ea">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Great+Vibes&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -35,6 +35,28 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="pl-c" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f6c24a"/><stop offset=".55" stop-color="#f9e3a2"/><stop offset="1" stop-color="#fffdf6"/></radialGradient>
+    <linearGradient id="lf-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f7a4f"/><stop offset="1" stop-color="#1e4a33"/></linearGradient>
+  </defs>
+  <symbol id="plumeria" viewBox="-60 -60 120 120">
+    <g>
+      <path id="pl-p" d="M0 0 C 14 -8, 34 -30, 22 -50 C 12 -62, -6 -52, -6 -34 C -6 -20, -3 -9, 0 0Z" fill="#fffdf6" stroke="#e9dcc0" stroke-width="1"/>
+      <use href="#pl-p" transform="rotate(72)"/><use href="#pl-p" transform="rotate(144)"/><use href="#pl-p" transform="rotate(216)"/><use href="#pl-p" transform="rotate(288)"/>
+      <circle r="13" fill="url(#pl-c)"/>
+    </g>
+  </symbol>
+  <symbol id="leaf" viewBox="0 0 120 40">
+    <path d="M2 20 C 30 -4, 86 -4, 118 20 C 86 44, 30 44, 2 20Z" fill="url(#lf-g)"/>
+    <path d="M6 20 H 112" stroke="#9cc59c" stroke-opacity=".55" stroke-width="1.2" fill="none"/>
+  </symbol>
+  <symbol id="flourish" viewBox="0 0 240 24">
+    <path d="M4 12 H 96 M144 12 H 236" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M96 12 c 6 -10 16 -10 18 -2 c 1 5 -5 7 -7 3 M144 12 c -6 -10 -16 -10 -18 -2 c -1 5 5 7 7 3" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M120 4 L 126 12 L 120 20 L 114 12Z" fill="currentColor"/>
+  </symbol>
+</svg>
 
 <div class="announce">
   <p><span class="dot" aria-hidden="true"></span> New owners, new menu. Chez Christina now serves <strong>Filipino Asian fusion</strong>. <a href="#menu">See what's cooking</a></p>
@@ -42,10 +64,7 @@
 
 <header class="nav" id="top">
   <div class="nav__inner">
-    <a class="nav__brand" href="#top" aria-label="Chez Christina by Casa Tala, back to top">
-      <img src="assets/img/logo.webp" alt="" width="44" height="47">
-      <span>Chez Christina <em>by Casa Tala</em></span>
-    </a>
+    <a class="nav__brand" href="#top" aria-label="Chez Christina by Casa Tala, back to top"><span class="lock lock--sm" aria-hidden="true"><span class="lock__script">Chez Christina</span><span class="lock__caps">Casa <b>&#9733;</b> Tala</span></span></a>
     <nav class="nav__links" aria-label="Main">
       <a href="#menu">Menu</a>
       <a href="#weekly">Buffet &amp; Music</a>
@@ -70,30 +89,29 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero__copy">
-    <p class="eyebrow">Jacklin Road &middot; Milpitas</p>
-    <h1>Filipino comfort food, <em>made for the whole table.</em></h1>
+    <p class="eyebrow">Filipino &middot; Asian Fusion &middot; Milpitas</p>
+    <h1>Filipino flavors, warm hospitality, <em>memorable celebrations.</em></h1>
     <div class="hero__cta">
       <a class="btn btn--gold" href="#menu">See the menu</a>
       <a class="btn btn--line" href="#order">Order online</a>
     </div>
-    <ul class="chips" aria-label="Highlights">
-      <li>Breakfast till 7 pm</li>
-      <li>Sunday buffet</li>
-      <li>Live music Fri &amp; Sat</li>
+    <ul class="services" aria-label="What we offer">
+      <li>Dine in</li><li>Takeout</li><li>Catering</li><li>Private events</li>
     </ul>
+    <p class="hero__note">Breakfast till 7 pm &middot; Sunday buffet &middot; Live music Fri &amp; Sat</p>
   </div>
 
   <div class="hero__art" aria-hidden="true">
     <svg class="deco" viewBox="0 0 600 600" role="presentation">
       <defs>
         <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#f3dc9a"/>
-          <stop offset=".45" stop-color="#c99a3c"/>
-          <stop offset="1" stop-color="#8a6420"/>
+          <stop offset="0" stop-color="#d9b45f"/>
+          <stop offset=".45" stop-color="#b8882e"/>
+          <stop offset="1" stop-color="#8c6519"/>
         </linearGradient>
         <radialGradient id="glow" cx=".5" cy=".5" r=".5">
-          <stop offset="0" stop-color="#c99a3c" stop-opacity=".28"/>
-          <stop offset="1" stop-color="#c99a3c" stop-opacity="0"/>
+          <stop offset="0" stop-color="#e9c97a" stop-opacity=".35"/>
+          <stop offset="1" stop-color="#e9c97a" stop-opacity="0"/>
         </radialGradient>
       </defs>
       <circle cx="300" cy="300" r="300" fill="url(#glow)"/>
@@ -105,7 +123,18 @@
       </g>
       <g class="deco__stars" fill="url(#gold)"></g>
     </svg>
-    <img class="hero__logo" src="assets/img/logo.webp" alt="" width="600" height="642">
+    <div class="hero__logo lock lock--lg">
+      <svg class="lock__hat" viewBox="0 0 64 44"><path d="M14 30 C 4 30, 2 16, 12 13 C 13 4, 26 0, 32 7 C 38 0, 51 4, 52 13 C 62 16, 60 30, 50 30 Z M16 32 H 48 V 40 H 16 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>
+      <span class="lock__script">Chez Christina</span>
+      <span class="lock__by">by</span>
+      <span class="lock__caps">Casa <b>&#9733;</b> Tala</span>
+      <span class="lock__sub">Filipino &bull; Asian Fusion</span>
+      <span class="lock__tag">A taste of home and beyond</span>
+    </div>
+    <svg class="flower flower--a"><use href="#plumeria"/></svg>
+    <svg class="flower flower--b"><use href="#plumeria"/></svg>
+    <svg class="leaf leaf--a"><use href="#leaf"/></svg>
+    <svg class="leaf leaf--b"><use href="#leaf"/></svg>
   </div>
 </section>
 
@@ -320,17 +349,45 @@
 <!-- WEEKLY -->
 <section class="section" id="weekly">
   <div class="head reveal">
-    <p class="eyebrow">Buffet, music &amp; celebrations</p>
-    <h2>Something to look forward to, <em>every week</em></h2>
+    <p class="eyebrow">Buffet &amp; Music</p>
+    <h2 class="script-head"><span>Sunday</span> Buffet</h2>
+    <svg class="flourish" aria-hidden="true"><use href="#flourish"/></svg>
+    <p>Make Sunday a delicious family tradition. Enjoy our Filipino buffet of comforting favorites, savory dishes, desserts and refreshing drinks, served with warm hospitality. Bring your family and friends for good food and memorable moments.</p>
   </div>
+
+  <div class="buffet reveal">
+    <div class="buffet__info">
+      <div class="buffet__prices">
+        <div class="price"><span class="price__who">Adult</span><span class="price__amt">$28.99</span></div>
+        <div class="price"><span class="price__who">Kids</span><span class="price__amt">$15.99</span><span class="price__note">13 years old &amp; below</span></div>
+      </div>
+      <div class="buffet__sets">
+        <p class="buffet__label">Two buffet sets</p>
+        <div class="sets"><div><b>Lunch</b><span>11:00 am &ndash; 3:00 pm</span></div><div><b>Dinner</b><span>5:00 pm &ndash; 9:00 pm</span></div></div>
+      </div>
+      <div class="buffet__lists">
+        <div>
+          <h3>On the buffet</h3>
+          <ul class="dots">
+            <li>Kare-Kare</li><li>Lechon Kawali</li><li>Dinuguan at Puto</li><li>Sinigang na Salmon Belly</li><li>Fried Chicken</li><li>Ginataang Sitaw at Kalabasa</li><li>Escabecheng Tilapia</li><li>Pancit Canton</li><li>Chicken Adobo</li><li>Longganisa</li><li>Embotido</li><li>Tinapang Bangus</li><li>Sopas</li><li>Siopao &amp; Siomai</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Desserts</h3>
+          <ul class="dots"><li>Macaroni Salad</li><li>Coffee Jelly</li><li>Halo-Halo</li></ul>
+          <h3>Drinks</h3>
+          <ul class="dots"><li>Pineapple Juice</li><li>Iced Tea</li></ul>
+        </div>
+      </div>
+      <p class="buffet__fine">Menu selections vary weekly. This list is from a recent Sunday.</p>
+    </div>
+    <figure class="buffet__flyer">
+      <img src="assets/img/buffet-flyer.webp" alt="Chez Christina by Casa Tala Sunday Buffet Menu flyer" width="374" height="599" loading="lazy">
+    </figure>
+  </div>
+
   <div class="weekly">
     <article class="card reveal">
-      <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 30h32M10 30c0-8 6-14 14-14s14 6 14 14M24 12v4M6 36h36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      <p class="card__when">Sundays</p>
-      <h3>Filipino buffet</h3>
-      <p>A full spread of Filipino favorites and desserts. Guests call out the kare-kare, pork sisig and lugaw.</p>
-    </article>
-    <article class="card card--feature reveal">
       <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 34V12l20-4v22M18 34a5 5 0 1 1-5-5 5 5 0 0 1 5 5zM38 30a5 5 0 1 1-5-5 5 5 0 0 1 5 5zM18 18l20-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <p class="card__when">Friday &amp; Saturday nights</p>
       <h3>Live music</h3>
@@ -338,9 +395,9 @@
     </article>
     <article class="card reveal">
       <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 20h28v18a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4zM8 14h32v6H8zM24 14v28M24 14c-4-8-12-6-10-1M24 14c4-8 12-6 10-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <p class="card__when">Any day</p>
-      <h3>Celebrations</h3>
-      <p>Birthdays, family gatherings and team lunches. Call ahead and we'll get your table and family-style plates ready.</p>
+      <p class="card__when">Catering &amp; private events</p>
+      <h3>Memorable celebrations</h3>
+      <p>Birthdays, family gatherings and office parties, in our dining room or catered to you. Call us to plan your menu.</p>
     </article>
   </div>
 </section>
@@ -348,7 +405,7 @@
 <!-- REVIEWS -->
 <section class="section reviews" aria-labelledby="rev-h">
   <div class="head reveal">
-    <p class="eyebrow">What guests are saying</p>
+    <p class="eyebrow">Good food, happier people</p>
     <h2 id="rev-h">Come as guests, <em>leave as family</em></h2>
   </div>
   <div class="quotes">
@@ -370,13 +427,17 @@
 <!-- STORY -->
 <section class="story" id="story">
   <div class="story__img reveal">
-    <img src="assets/img/spread.webp" alt="A table spread of Filipino and Asian fusion dishes" width="1400" height="787" loading="lazy">
+    <img class="story__main" src="assets/img/spread.webp" alt="A table spread of Filipino and Asian fusion dishes" width="1400" height="787" loading="lazy">
+    <figure class="story__then">
+      <img src="assets/img/original-wine.webp" alt="An original Chez Christina gift certificate beside a bottle of Educated Guess cabernet on a white tablecloth" width="594" height="591" loading="lazy">
+      <figcaption>The original Chez Christina</figcaption>
+    </figure>
   </div>
   <div class="story__copy reveal">
     <p class="eyebrow">Our story</p>
-    <h2>A Milpitas classic, <em>with a new family at the stove</em></h2>
-    <p>For more than thirty years, Chez Christina was the place on Jacklin Road for a quiet dinner and a good steak. In August 2026, owner Apple and her family took over the kitchen and reopened it as <strong>Chez Christina by Casa Tala</strong>.</p>
-    <p><em>Tala</em> means &ldquo;star&rdquo; in Filipino. We cook Filipino favorites with Asian and international touches, and we serve them with real Filipino hospitality: generous plates, a warm welcome and a table that always has room for one more.</p>
+    <h2>A taste of home <em>&amp; beyond</em></h2>
+    <p>Chez Christina by Casa Tala proudly continues a <strong>30-year legacy</strong> of serving good food and bringing people together. For three decades, Chez Christina was the place on Jacklin Road for a quiet dinner and a good steak.</p>
+    <p>In this new chapter, owner Apple and her family are introducing <strong>Filipino&ndash;Asian fusion</strong>. Our mission is to serve delicious food, so every gathering becomes a cherished memory. <em>Tala</em> means &ldquo;star&rdquo; in Filipino, and we hope you'll make our table your own.</p>
     <p class="sig">Come as guests, leave as family.</p>
   </div>
 </section>
@@ -415,7 +476,8 @@
 </main>
 
 <footer class="footer">
-  <img src="assets/img/logo.webp" alt="Chez Christina by Casa Tala logo" width="120" height="128" loading="lazy">
+  <span class="lock lock--md"><span class="lock__script">Chez Christina</span><span class="lock__by">by</span><span class="lock__caps">Casa <b>&#9733;</b> Tala</span><span class="lock__sub">Filipino &bull; Asian Fusion</span></span>
+  <p class="footer__services">Dine in &bull; Takeout &bull; Catering &bull; Private events</p>
   <p>1339 Jacklin Rd, Milpitas, CA 95035 &middot; <a href="tel:+16692635062">(669) 263-5062</a></p>
   <p class="footer__small">&copy; <span id="yr">2026</span> Chez Christina by Casa Tala &middot; Website by <a href="https://mdvwebdesign.com" target="_blank" rel="noopener">MDV Web Design</a></p>
 </footer>
