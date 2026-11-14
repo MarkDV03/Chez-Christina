@@ -52,11 +52,12 @@
       <a href="#story">Our Story</a>
       <a href="#visit">Visit</a>
     </nav>
-    <a class="btn btn--gold btn--sm" href="tel:+16692635062">Call to reserve</a>
+    <a class="btn btn--gold btn--sm" href="#order">Order online</a>
     <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
   </div>
   <div class="mobile" id="mobile-menu" hidden>
     <a href="#menu">Menu</a>
+    <a href="#order">Order Online</a>
     <a href="#weekly">Buffet &amp; Music</a>
     <a href="#story">Our Story</a>
     <a href="#visit">Visit</a>
@@ -74,7 +75,7 @@
     <p class="lede">Chez Christina has a new family behind it. Same cozy room on Jacklin Road, now cooking kare-kare, sizzling sisig and all-day silog breakfasts with an Asian fusion twist.</p>
     <div class="hero__cta">
       <a class="btn btn--gold" href="#menu">See the menu</a>
-      <a class="btn btn--line" href="#order">Order for pickup</a>
+      <a class="btn btn--line" href="#order">Order online</a>
     </div>
     <ul class="chips" aria-label="Highlights">
       <li>Breakfast all day</li>
@@ -300,6 +301,51 @@
   </div>
 </section>
 
+<!-- ORDER ONLINE -->
+<section class="order" id="order">
+  <div class="order__inner">
+    <div class="head reveal">
+      <p class="eyebrow">Order online</p>
+      <h2>Casa Tala, <em>at your table at home</em></h2>
+      <p>Get your favorites delivered, or call ahead and pick them up hot from the kitchen.</p>
+    </div>
+
+    <div class="order__ways">
+      <a class="way way--main reveal" href="tel:+16692635062">
+        <svg class="way__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 18h28l-3 22H13zM17 18v-4a7 7 0 0 1 14 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="way__label">Pickup</span>
+        <strong>Call ahead &amp; pick up</strong>
+        <span class="way__text">Order by phone and skip the delivery fees. We'll have it ready when you get here.</span>
+        <span class="way__go">(669) 263-5062 &rarr;</span>
+      </a>
+      <a class="way reveal" href="https://www.doordash.com/store/chez-christina-restaurant-milpitas-51262672/" target="_blank" rel="noopener">
+        <svg class="way__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30h22l6-12h6M14 36a4 4 0 1 1-4-4 4 4 0 0 1 4 4zM42 36a4 4 0 1 1-4-4 4 4 0 0 1 4 4zM8 22h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="way__label">Delivery</span>
+        <strong>Order on DoorDash</strong>
+        <span class="way__text">Delivery or pickup from the full Casa Tala menu.</span>
+        <span class="way__go">Start your order &rarr;</span>
+      </a>
+      <a class="way reveal" href="https://www.grubhub.com/restaurant/chez-christina-by-casa-tala-1339-jacklin-rd-milpitas/15117728" target="_blank" rel="noopener">
+        <svg class="way__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30h22l6-12h6M14 36a4 4 0 1 1-4-4 4 4 0 0 1 4 4zM42 36a4 4 0 1 1-4-4 4 4 0 0 1 4 4zM8 22h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="way__label">Delivery</span>
+        <strong>Order on Grubhub</strong>
+        <span class="way__text">Delivery or pickup, with your Grubhub perks.</span>
+        <span class="way__go">Start your order &rarr;</span>
+      </a>
+    </div>
+
+    <div class="popular reveal">
+      <p class="popular__title">Most ordered</p>
+      <div class="popular__row">
+        <a href="https://www.doordash.com/store/chez-christina-restaurant-milpitas-51262672/" target="_blank" rel="noopener"><img src="assets/img/lechon-kawali.webp" alt="" width="900" height="675" loading="lazy"><span>Lechon Kawali</span></a>
+        <a href="https://www.doordash.com/store/chez-christina-restaurant-milpitas-51262672/" target="_blank" rel="noopener"><img src="assets/img/tapsilog.webp" alt="" width="900" height="675" loading="lazy"><span>Tapsilog</span></a>
+        <a href="https://www.doordash.com/store/chez-christina-restaurant-milpitas-51262672/" target="_blank" rel="noopener"><img src="assets/img/kare-kare.webp" alt="" width="900" height="675" loading="lazy"><span>Kare-Kare</span></a>
+        <a href="https://www.doordash.com/store/chez-christina-restaurant-milpitas-51262672/" target="_blank" rel="noopener"><img src="assets/img/sinigang.webp" alt="" width="900" height="675" loading="lazy"><span>Pork Sinigang</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- REVIEWS -->
 <section class="section reviews" aria-labelledby="rev-h">
   <div class="head reveal">
@@ -333,22 +379,6 @@
     <p>For more than thirty years, Chez Christina was the place on Jacklin Road for a quiet dinner and a good steak. In August 2026, owner Apple and her family took over the kitchen and reopened it as <strong>Chez Christina by Casa Tala</strong>.</p>
     <p><em>Tala</em> means &ldquo;star&rdquo; in Filipino. We cook Filipino favorites with Asian and international touches, and we serve them with real Filipino hospitality: generous plates, a warm welcome and a table that always has room for one more.</p>
     <p class="sig">Come as guests, leave as family.</p>
-  </div>
-</section>
-
-<!-- ORDER -->
-<section class="order" id="order">
-  <div class="order__inner reveal">
-    <div>
-      <p class="eyebrow">Eating at home tonight?</p>
-      <h2>Order for pickup or delivery</h2>
-      <p>Call us to order pickup, or get delivery through your favorite app.</p>
-    </div>
-    <div class="order__btns">
-      <a class="btn btn--gold" href="tel:+16692635062">Call for pickup</a>
-      <a class="btn btn--line" href="https://www.doordash.com/store/chez-christina-restaurant-milpitas-51262672/" target="_blank" rel="noopener">DoorDash</a>
-      <a class="btn btn--line" href="https://www.grubhub.com/restaurant/chez-christina-by-casa-tala-1339-jacklin-rd-milpitas/15117728" target="_blank" rel="noopener">Grubhub</a>
-    </div>
   </div>
 </section>
 
@@ -391,7 +421,7 @@
   <p class="footer__small">&copy; <span id="yr">2026</span> Chez Christina by Casa Tala &middot; Website by <a href="https://mdvwebdesign.com" target="_blank" rel="noopener">MDV Web Design</a></p>
 </footer>
 
-<a class="callbar" href="tel:+16692635062" aria-label="Call Chez Christina">Call to order or reserve</a>
+<div class="callbar"><a href="tel:+16692635062">Call</a><a href="#order">Order online</a></div>
 
 <script src="script.js" defer></script>
 </body>

@@ -94,12 +94,12 @@
   /* Sticky call bar on phones, after the hero */
   var bar = document.querySelector('.callbar');
   var heroSec = document.querySelector('.hero');
-  var visit = document.getElementById('visit');
   if (bar && heroSec && 'IntersectionObserver' in window) {
-    var past = false, atVisit = false;
-    var upd = function(){ bar.classList.toggle('is-on', past && !atVisit); };
+    var past = false, seen = {};
+    var upd = function(){ bar.classList.toggle('is-on', past && !seen.order && !seen.visit); };
     new IntersectionObserver(function(es){ past = !es[0].isIntersecting; upd(); }).observe(heroSec);
-    if (visit) new IntersectionObserver(function(es){ atVisit = es[0].isIntersecting; upd(); }).observe(visit);
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ seen[e.target.id] = e.isIntersecting; }); upd(); });
+    ['order','visit'].forEach(function(id){ var el = document.getElementById(id); if (el) io.observe(el); });
   }
 
   /* Active section in nav + menu jump bar */
