@@ -392,3 +392,7 @@ address{font-style:normal;font-size:1.15rem;margin-bottom:6px}
 .nav__badge{width:62px;height:62px;image-rendering:auto}
 .nav__inner{padding-block:6px}
 @media (max-width:600px){.nav__badge{width:52px;height:52px}}
+
+/* Clear inner circle: solid black inside the logo ring, glow only outside it */
+.hero__badge{filter:none;background:radial-gradient(circle,#050504 0 46.5%,rgba(5,5,4,0) 47.5%)}
+.hero::before{background:radial-gradient(40% 50% at 10% 90%,rgba(85,117,54,.16),transparent 70%)}
